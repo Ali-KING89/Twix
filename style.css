@@ -1,0 +1,89 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: whitesmoke;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.gif {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.btn-group {
+    margin-top: 20px;
+    position: relative;
+    height: 40px;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    border: 2px solid #e94d58;
+    transition: all 0.3s ease;
+    margin: 5px;
+}
+
+button.yes-btn {
+    background: #e94d58;
+}
+
+button.no-btn {
+    background: white;
+    color: #e94d58;
+    position: absolute;
+    left: 60%; /* Offset to make it different from "Yes" */
+    transform: translateX(-50%);
+}
+
+.next-btn {
+    margin-top: 20px;
+    background-color: #007b7f;
+    color: white;
+    display: block;
+}
+
+/* Huge message styling */
+.huge-message {
+    font-size: 2.5em;
+    text-align: center;
+    color: #e94d58;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Hover effects */
+button:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
